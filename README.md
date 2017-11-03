@@ -7,9 +7,11 @@ doc2vecの章で使われているデータを使用しています。
 ***
 ### PV_DM
 <br>
+
 ```
 Python PV_DM.py
 ```
+
 <br>
 PV_DMで分散表現を作成し、学習データとテストデータに分けます。<br>
 PV_DMで作成した学習データとテストデータはPVDM.npzとして保存されます。<br>
@@ -19,9 +21,11 @@ PV_DMで作成した学習データとテストデータはPVDM.npzとして保�
 ***
 ### PV_DBOW
 <br>
+
 ```
 Python PV_DBOW.py
 ```
+
 <br>
 PV_DBOWで分散表現を作成し、学習データとテストデータに分けます。<br>
 作成した学習データとテストデータはPV_DBOW.npzとして保存されます。<br>
@@ -30,22 +34,28 @@ PV_DBOWで分散表現を作成し、学習データとテストデータに分�
 ***
 ### PV_DMとPV_DBOW
 <br>
+
 ```
 Python doc2vec.py
 ```
+
 <br>
 上の両方を使って、分散表現を作成し、学習データとテストデータに分けます。<br>
 作成された学習データとテストデータはDOUBLE.npzとして保存されます。<br>
 作成した分散表現の行列もtempファイル内のmovie.npzに保存されます。<br>
 <br>
+
 ***
+
 ### Kerasで感情分析
+
 <br>
 最後にKerasを使って感情分析(positive/negative)を行います。
 
 ```
  Python Keras_SentiAna.py DOUBLE 
 ```
+
 DOUBLE のところをPVDM, PVDBOWに変えれば、PVDMのみ、またはPVDBOWのみで学習した分散表現を使用できます。<br>
 #### 実行結果<br>
 ```
